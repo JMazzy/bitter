@@ -20345,3 +20345,5 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 $(document).foundation();
+
+$(function(){ $(document).foundation(); });
