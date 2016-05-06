@@ -13,8 +13,19 @@
 
   <body>
 
-    <p class="success card"><%= notice %></p>
-    <p class="alert card"><%= alert %></p>
+    <% flash.each do |key, message| %>
+      <% if key == 'notice' %>
+        <% flash_type = 'success' %>
+      <% else %>
+        <% flash_type = key %>
+      <% end %>
+
+      <div class="card <%= flash_type %>">
+        <div class="card-section">
+          <%= message %>
+        </div>
+      </div>
+    <% end %>
 
     <%= yield %>
 
