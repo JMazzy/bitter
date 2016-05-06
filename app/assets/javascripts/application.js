@@ -1,4 +1,6 @@
+//= require jquery
+//= require jquery_ujs
 //= require foundation
-$(document).foundation();
+//= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(document).foundation();
