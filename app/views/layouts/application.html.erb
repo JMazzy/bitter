@@ -22,13 +22,8 @@
         <% end %>
 
         <div class="grid-content small-6 small-offset-3">
-          <div class="card <%= flash_type %>">
-            <div class="card-divider">
-              <%= flash_type.titleize %>
-            </div>
-            <div class="card-section">
-              <%= message %>
-            </div>
+          <div class="button <%= flash_type %> expand">
+            <%= message %>
           </div>
         </div>
 
