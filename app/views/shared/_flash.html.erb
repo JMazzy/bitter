@@ -1,0 +1,16 @@
+<div class="grid-block">
+  <% flash.each do |key, message| %>
+    <% if key == 'notice' %>
+      <% flash_type = 'success' %>
+    <% else %>
+      <% flash_type = key %>
+    <% end %>
+
+    <div class="grid-content small-6 small-offset-3">
+      <div class="button <%= flash_type %> expanded">
+        <%= message %>
+      </div>
+    </div>
+
+  <% end %>
+</div>
