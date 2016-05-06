@@ -10,6 +10,7 @@ gem 'redis'
 gem 'bcrypt'
 gem 'devise'
 gem 'faker'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'binding_of_caller'
