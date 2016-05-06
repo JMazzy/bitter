@@ -11,23 +11,33 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body class="grid-frame">
 
-    <% flash.each do |key, message| %>
-      <% if key == 'notice' %>
-        <% flash_type = 'success' %>
-      <% else %>
-        <% flash_type = key %>
-      <% end %>
+    <div class="grid-block">
+      <% flash.each do |key, message| %>
+        <% if key == 'notice' %>
+          <% flash_type = 'success' %>
+        <% else %>
+          <% flash_type = key %>
+        <% end %>
 
-      <div class="card <%= flash_type %>">
-        <div class="card-section">
-          <%= message %>
+        <div class="grid-content small-6 small-offset-3">
+          <div class="card <%= flash_type %>">
+            <div class="card-divider">
+              <%= flash_type.titleize %>
+            </div>
+            <div class="card-section">
+              <%= message %>
+            </div>
+          </div>
         </div>
-      </div>
-    <% end %>
 
-    <%= yield %>
+      <% end %>
+    </div>
+
+    <div class="grid-block">
+      <%= yield %>
+    </div>
 
   </body>
 </html>
