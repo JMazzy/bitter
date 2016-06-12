@@ -1,4 +1,4 @@
-class BitController < ApplicationController
+class BitsController < ApplicationController
 
   def index
     @bits = Bit.all
