@@ -1,0 +1,15 @@
+.bit-block {
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.one {
+  background-color: white;
+}
+
+.zero {
+  background-color: black;
+}
