@@ -1,0 +1,7 @@
+<h1>Users</h1>
+
+<% @users.each do |user| %>
+  <a href="#"><%= user.full_name %></a>
+<% end %>
+
+<% content_for :title, "All Users" %>

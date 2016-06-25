@@ -6,6 +6,14 @@
 
   <div class="">
     <% @bits.each do |b| %>
+      <%= b.data %>
+    <% end %>
+  </div>
+
+  <h3>Bits (Black and White)</h3>
+
+  <div class="">
+    <% @bits.each do |b| %>
       <%= bit_to_block(b.data) %>
     <% end %>
   </div>
